@@ -89,17 +89,9 @@ void shellSort(int *arr, int n)
 }
 int main()
 {
-	int arr[10] = { 0 };
-
-
-	for (int i = 0; i < 5; i++)
-		scanf("%d", &arr[i]);
+	int *arr,n;
 	
-	//insertionSort(arr, 5);
-	//selectionSort(arr, 5);
-	//bubbleSort(arr, 5);
-	shellSort(arr, 5);
-	printArr(arr);
-
+	scanf("%d", &n);
+	arr = (int*)calloc(1)
 	return 0;
 }
