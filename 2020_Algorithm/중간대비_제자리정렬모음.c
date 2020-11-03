@@ -1,6 +1,7 @@
 #pragma warning(disable:4996)
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define PARENT(x) ((x)/(2))
 #define LEFT_CHILD(x) ((2)*(x))
@@ -192,21 +193,36 @@ void heapSort(int arr[], int n)
 	}
 }
 
+
+
+void partition(char str[], int idx)
+{
+
+	for (int i = 0; i < strlen(str); i++)
+	{
+
+
+		
+	}
+
+
+
+
+
+}
+
+
+
+
 int main()
 {
-	int n, arr[100];
-	scanf("%d", &n);
-	makeArr(arr, n);
-	printArr(arr, n);
-	printf("-- Sorting -- \n");
-	//selectionSort(arr, n);
-	//insertionSort(arr, n);
-	//mergeSort(arr, 0, n - 1);
-	//quickSort(arr, 0, n - 1);
-	arr[n] = arr[0];
-	heapSort(arr, n);
-	printf("Sorted : -> ");
-	printHeap(arr, n);
+	
+	char str[100];
+	int idx;
+	gets(str);
 
+	scanf("%d", &idx);
+
+	partition(str,n);
 	return 0;
 }
